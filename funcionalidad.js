@@ -88,13 +88,13 @@ function init() {
 
     igual.onclick = function(e) {
         operandob = resultado.textContent;
-        resolver();
+        limpiar();
     }
 
 }
 
 function limpiar() {
-    resultado.textContent = "";
+    resultado.textContent = ""
 }
 
 function resetear() {
@@ -102,5 +102,24 @@ function resetear() {
     operandoa = 0;
     operandob = 0;
     operacion = "";
+}
 
+function resolver() {
+    var res = 0;
+    switch (operacion) {
+        case "+":
+            res = parseInt(operandoa) + parseInt(operandob)
+            break;
+        case "-":
+            res = parseInt(operandoa) - parseInt(operandob)
+            break;
+        case "*":
+            res = parseInt(operandoa) * parseInt(operandob)
+            break;
+        case "/":
+            res = parseInt(operandoa) / parseInt(operandob)
+            break;
+    }
+    resetear();
+    resultado.textContent = res;
 }

@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora con JavaScript</title>
+    <!--Permite crear el nombre del programa en el browser-->
     <link type="text/css" rel="stylesheet" href="estilo.css">
+    <!--permite traer los estilos CSS definidos para la plantilla de la calculadora del archivo estilo.css-->
 </head>
 
+<!--Carga la función init del archivo JS-->
+
 <body onload="init();">
+
+    <!--creara una clase que le permitire generar relación con los estilos CSS, adicional se crea una TABLA donde se pondrán los botones-->
     <table class="Calculadora">
+        <!--El elemento HTML fila de tabla (table row) TR define una fila de celdas en una tabla.-->
         <tr>
+            <!--El elemento HTML Celda de tabla (TD) define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas.  // el Colspan, indica el número de columnas que ocupará la celda. Por defecto ocupa una sola columna.-->
             <td colspan="4"><span id="resultado"></span></td>
         </tr>
         <tr>
+            <!--La etiqueta de HTML <button> representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplica-->
             <td><button id="siete">7</button></td>
             <td><button id="ocho">8</button></td>
             <td><button id="nueve">9</button></td>
@@ -38,6 +47,7 @@
         </tr>
 
     </table>
+    <!--importo el archivo con las funciones implementando la lógica a través de JS, que haran que los componentes creados en el HTML funcionen-->
     <script src="funcionalidad.js"></script>
 </body>
 
