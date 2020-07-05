@@ -1,11 +1,20 @@
+/*En este apartado se realiza todo lo referente a estilos -- */
+
 .calculadora {
     display: block;
+    /*Display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). */
     margin: 0px auto;
+    /* La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).  */
     padding: 20px;
+    /* La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde (border). No se permiten valores negativos. */
     background-color: rgb(22, 20, 18);
+    /* color del fondo de la pantalla*/
     width: 350px;
+    /* ancho de la clase Calculador*/
     height: 500px;
+    /* largo de la clase Calculador*/
     border-radius: 25px;
+    /* La propiedad CSS border-radius permite a los desarrolladores Web definir qué tan redondeadas serán las esquinas. */
 }
 
 .calculadora td button {
@@ -28,3 +37,15 @@
     border-radius: 25px;
     overflow-y: scroll;
 }
+
+
+/*ids are unique
+
+    Each element can have only one id
+    Each page can have only one element with that id
+
+classes are NOT unique
+
+    You can use the same class on multiple elements.
+    You can use multiple classes on the same element.
+ */
