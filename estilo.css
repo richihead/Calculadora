@@ -29,13 +29,17 @@
     display: block;
     text-align: center;
     font-size: 40px;
+    /*tamano de la fuente*/
     margin-bottom: 50px;
     width: 300px;
     height: 100px;
     line-height: 100px;
+    /* Comúnmente se usa para establecer la distancia entre líneas de texto. A nivel de elementos de bloque, define la altura mínima de las casillas encuadradas por líneas dentro del elemento.  */
     background-color: white;
     border-radius: 25px;
+    /* permite redondear los bordes de una imagen cuadrada*/
     overflow-y: scroll;
+    /* La propiedad CSS overflow-y define qué se debe mostrar cuando el contenido se desborda de los extremos superior e inferior de un elemento en bloque.*/
 }
 
 
